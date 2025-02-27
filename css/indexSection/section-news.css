@@ -1,0 +1,100 @@
+/* Estilo para cada artículo de noticias */
+.news-item {
+    background: var(--color-secondary-background);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--color-shadow);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Imagen de la noticia */
+  .news-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Cabecera de la noticia */
+  .news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Título de la noticia */
+  .news-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-text);
+    text-align: left;
+    flex: 1;
+  }
+  
+  /* Información meta de la noticia */
+  .news-meta {
+    font-size: 14px;
+    color: var(--color-text);
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+  /* Contenido de la noticia */
+  .news-content {
+    font-size: 16px;
+    color: var(--color-text);
+    text-align: justify;
+    margin-top: 10px;
+  }
+  
+  /* Contenedor para el botón de compartir */
+  .share-container {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  /* Estilo del botón de compartir */
+  .share-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--color-text);
+    transition: color 0.3s;
+  }
+  
+  /* Efecto hover del botón de compartir */
+  .share-button:hover {
+    color: var(--color-primary);
+  }
+  
+  /* Opciones de compartir */
+  .share-options {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    background: var(--color-background);
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px var(--color-shadow);
+  }
+  
+  /* Estilo de los enlaces en las opciones de compartir */
+  .share-options a {
+    display: block;
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 5px 0;
+  }
+  
+  /* Efecto hover de los enlaces en las opciones de compartir */
+  .share-options a:hover {
+    color: var(--color-primary);
+  }
+  

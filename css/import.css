@@ -1,0 +1,16 @@
+
+/* global */
+@import url('global/style.css');
+@import url('global/header.css');
+@import url('global/footer.css');
+/* theme */
+@import url('theme/fonts.css');
+@import url('theme/palette.css');
+/* index.html sections*/
+@import url('indexSection/section-news.css');
+@import url('indexSection/section-portada.css');
+@import url('indexSection/section-presupuesto.css');
+@import url('indexSection/section-servicios.css');
+@import url('indexSection/section-testimonios.css');
+@import url('indexSection/section-contacto.css');
+

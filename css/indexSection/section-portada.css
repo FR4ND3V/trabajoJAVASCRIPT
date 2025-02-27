@@ -1,0 +1,86 @@
+.hero {
+  background: url('../../img/backgrounds/background.jpg') no-repeat center center/cover;
+  background-size: cover;
+  height: 100vh; /* Ocupa toda la altura del viewport */
+  width: 100%;  /* Asegura que ocupe el 100% del ancho */
+  max-width: none; /* Elimina la restricción de ancho máximo */
+  margin: 0; /* Elimina márgenes para que cubra los lados */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);  /* Color de texto principal */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  right: 17%; /* Ajusta la distancia desde la derecha */
+  text-align: right; /* Alinea el texto a la derecha */
+  color: var(--color-text);  /* Color de texto principal */
+  text-shadow: 1px 1px 4px rgba(14, 14, 14, 0.7);
+  justify-content: center;
+}
+
+.hero h1 {
+  font-family: var(--font-secondary);  /* Fuente para titulares */
+  font-weight: var(--font-weight-bold);  /* Peso de fuente bold */
+  font-size: 4.6rem;
+  margin-bottom: 20px;
+  color: var(--color-text);  /* Color de texto principal */
+}
+
+.hero span {
+  color: var(--color-primary);
+}
+
+.hero p {
+  font-family: var(--font-primary);  /* Fuente para párrafos */
+  font-size: 1.5rem;
+  color: var(--color-text);  /* Color de texto principal */
+}
+
+
+/* Estilo para la lista */
+.menu {
+  list-style-type: none;  /* Elimina los puntos de la lista */
+  padding-top: 20px;            /* Elimina el padding por defecto */
+  margin: 0;             /* Elimina el margen por defecto */
+  text-align: left;  /* Alinea el contenido dentro del nav a la izquierda */
+  display: block;
+}
+
+.menu li {
+  display: block; /* Los elementos se muestran en línea */
+}
+
+.menu a {
+  color: white;        /* Color de texto blanco */
+  text-decoration: none;  /* Elimina el subrayado */
+  padding: 10px 20px;  /* Espaciado alrededor del texto */
+  display: block;      /* Hace que el enlace ocupe todo el área del li */
+  font-weight: 700;   /* Texto en negrita */
+  transition: color 0.4s; /* Transición suave para el cambio de color */
+}
+
+/* Estilo cuando el usuario pasa el mouse sobre el enlace */
+.menu a:hover {
+  color: var(--color-primary);   /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero-content {
+    right: 5%;
+    top: 10%;
+  }
+}

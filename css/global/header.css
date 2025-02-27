@@ -1,0 +1,184 @@
+/* Importación de Fuentes */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+
+  background-color: #141414; /* Fondo oscuro */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
+  z-index: 1000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+.nav {
+  height: 3.7rem;
+}
+
+.nav__data {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  color: #615852;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+
+.nav__logo:hover {
+  color: var(--color-primary);
+}
+
+.nav__toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav__toggle-menu,
+.nav__toggle-close {
+  font-size: 1.25rem;
+  color: white;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.3s;
+}
+
+.nav__toggle-close {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1118px) {
+  .container {
+    margin-inline: 1.5rem;
+  }
+  .nav__menu {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    padding-block: 1.5rem 4rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.3s, opacity 0.3s;
+  }
+
+  .nav__menu::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .nav__menu::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 0%);
+  }
+}
+.nav__link {
+  color: #615852;
+  font-weight: 200;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.5s, color 0.5s, font-style 0.5s; /* Añadir la transición para font-style */
+  letter-spacing: 0.2rem;
+}
+
+.nav__link:hover {
+  background-color: rgba(41, 41, 41, 0.301);
+  color: var(--color-primary);
+  transition: background-color 0.5s, color 0.5s, font-style 0.5s; /* Asegurarse de incluir font-style en la transición */
+}
+
+
+.active {
+  font-style: italic;
+  color: var(--color-primary);
+  font-weight: 200;
+}
+
+/* Show menu */
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+  z-index: 1000;
+}
+
+/* Show icon */
+.show-icon .nav__toggle-menu {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.show-icon .nav__toggle-close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+/*=============== DROPDOWN ===============*/
+
+@media screen and (min-width: 1118px) {
+  .nav {
+    height: 3.9rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    column-gap: 3rem;
+    height: 100%;
+  }
+
+  .nav li {
+    display: flex;
+  }
+
+  .nav__link {
+    padding: 0;
+  }
+
+  .nav__link:hover {
+    background-color: initial;
+  }
+
+  .nav__logo a {
+    margin-left: 50px;
+  }
+}

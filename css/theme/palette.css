@@ -1,0 +1,30 @@
+
+:root {
+  /* Colores Principales */
+  --color-primary: #ff8f38;  /* Color de énfasis (Naranja) */
+  --color-text: #a0a0a0;     /* Color de texto principal */
+  --color-background: #131317; /* Fondo principal oscuro */
+  --color-secondary-background: #1b1b22; /* Fondo secundario más oscuro */
+
+  /* Colores Auxiliares */
+  --color-border: #33333d;   /* Color de bordes */
+  --color-hover: #ff9f50;    /* Color para el estado hover */
+  --color-shadow: rgba(0, 0, 0, 0.2); /* Sombra sutil */
+
+  /* Colores para Formulario */
+  --color-background-form: rgba(28, 28, 30, 0.85); /* Fondo del formulario */
+  --color-form-border: rgba(0, 0, 0, 0.2); /* Borde de campos en formularios */
+  --color-input-focus: #007aff; /* Color de foco para campos de entrada */
+
+  /* Colores para Estado Focalizado y Alertas */
+  --color-focus: #007aff;    /* Color de foco para campos */
+  --color-error: #ff3b30;    /* Color de error para mensajes */
+
+  /* Colores para Modo Oscuro */
+  --color-background-dark: #131317; /* Fondo oscuro para el modo oscuro */
+  --color-text-dark: #f5f5f7;      /* Texto claro para el modo oscuro */
+  --color-text-clear: #131317;      /* Texto oscuro para contrastes */
+
+  /* zindex*/
+  --z-fixed: 100;
+}

@@ -1,0 +1,97 @@
+.gallery {
+  column-count: 5;
+  column-gap: 22px;
+  padding: 80px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hace que la galería se vea cuando carga */
+.gallery.loaded {
+  opacity: 1;
+}
+
+/* Evitar cortes entre columnas */
+.gallery a {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 22px;
+  overflow: hidden;
+  border-radius: 8px;
+  break-inside: avoid;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Imágenes con fade-in */
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.95);
+  filter: grayscale(90%); 
+  transition: 
+    opacity 0.6s ease-in-out, 
+    transform 0.3s ease-in-out, 
+    filter 0.6s ease-in-out
+}
+
+/* Cuando las imágenes y enlaces se cargan */
+.gallery a.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery img.loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Efecto hover */
+.gallery a:hover {
+  transform: scale(1.05);
+}
+
+.gallery a:hover img {
+  filter: grayscale(0%); /* 🔹 Vuelve a color */
+  transform: scale(1.05); /* 🔹 Ligero zoom */
+}
+
+
+
+
+
+/* Responsivo */
+@media (min-width: 2881px) {
+  .gallery { column-count: 8; padding: 50px; }
+}
+@media (max-width: 2880px) {
+  .gallery { column-count: 7; padding: 50px; }
+}
+@media (max-width: 2400px) {
+  .gallery { column-count: 6; padding: 50px; }
+}
+@media (max-width: 1920px) {
+  .gallery { column-count: 5; padding: 50px; }
+}
+@media (max-width: 1500px) {
+  .gallery { column-count: 4; padding: 50px; }
+}
+
+@media (max-width: 1080px) {
+  .gallery { column-count: 3; padding: 30px; }
+}
+
+@media (max-width: 768px) {
+  .gallery { column-count: 2; padding: 20px; }
+}
+
+@media (max-width: 480px) {
+  .gallery { column-count: 1; padding: 10px; }
+}
+
+
+

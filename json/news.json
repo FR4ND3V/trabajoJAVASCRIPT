@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Nuevo Menú de Temporada",
+    "image": "img/section-news/nuevoMenu.jpeg",
+    "date": "2025-02-13",
+    "author": "Juan Pérez",
+    "excerpt": "Descubre los nuevos sabores que hemos preparado para esta temporada.",
+    "content": "Hemos lanzado un nuevo menú con ingredientes frescos y sabores innovadores. Prueba nuestras nuevas especialidades y disfruta de una experiencia gastronómica única.",
+    "category": "Nuevas Ofertas",
+    "tags": ["menú", "novedades", "restaurante"],
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "instagram": "#"
+    },
+    "comments": []
+  },
+  {
+    "title": "Evento Especial: Cena de San Valentín",
+    "image": "img/section-news/sanValentin.png",
+    "date": "2025-02-10",
+    "author": "María Gómez",
+    "excerpt": "Celebra el amor con una cena especial diseñada para parejas.",
+    "content": "Este 14 de febrero, ofrecemos un menú exclusivo para San Valentín. Incluye entrada, plato principal, postre y una copa de vino por pareja.",
+    "category": "Eventos",
+    "tags": ["San Valentín", "cena romántica", "oferta especial"],
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "instagram": "#"
+    },
+    "comments": [
+      {
+        "user": "Carlos López",
+        "comment": "¡Estoy ansioso por probar este menú!",
+        "date": "2025-02-11"
+      }
+    ]
+  },
+  {
+    "title": "Receta Exclusiva: Pasta Alfredo",
+    "image": "img/section-news/receta_pasta.avif",
+    "date": "2025-01-28",
+    "author": "Chef Ana Ruiz",
+    "excerpt": "Aprende a preparar una deliciosa Pasta Alfredo con nuestra receta especial.",
+    "content": "Sigue nuestro paso a paso para cocinar una auténtica Pasta Alfredo con ingredientes frescos y un toque especial de nuestro chef.",
+    "category": "Recetas",
+    "tags": ["receta", "pasta", "cocina"],
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "instagram": "#"
+    },
+    "comments": [
+      {
+        "user": "Laura Méndez",
+        "comment": "¡La preparé y quedó deliciosa!",
+        "date": "2025-01-30"
+      }
+    ]
+  }
+]

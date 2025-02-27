@@ -1,0 +1,50 @@
+/* Importación de Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Bodoni+Moda:wght@400;700&display=swap');
+
+/* Tipografía */
+:root {
+  --font-primary: 'Lora', serif;        /* Para párrafos */
+  --font-secondary: 'Bodoni Moda', serif; /* Para titulares */
+
+  /* Tamaños de fuente */
+  --font-size-base: 1.2rem;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2rem;
+  --font-size-small: 1rem;
+
+  /* Peso de fuente */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+/* Aplicación de fuentes */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-bold);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  font-size: var(--font-size-base);
+}
+
+small {
+  font-size: var(--font-size-small);
+}

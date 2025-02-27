@@ -1,0 +1,36 @@
+
+/* Estilos para la sección de presupuesto */
+.presupuesto {
+    padding: 40px;
+    text-align: center;
+}
+
+.presupuesto h2 {
+    font-size: var(--font-size-h2);
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.presupuesto p {
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Estilos para el botón */
+.presupuesto a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--color-primary);
+    color: var(--color-text-clear);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: var(--font-size-base);
+    transition: background-color 0.3s ease;
+    font-family: var(--font-secondary); /* Usamos la fuente secundaria */
+}
+
+.presupuesto a:hover {
+    background-color: var(--color-hover);
+}

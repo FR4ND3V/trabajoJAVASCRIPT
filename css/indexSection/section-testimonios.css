@@ -1,0 +1,17 @@
+/* Sección de Testimonios */
+.testimonios blockquote {
+  background: var(--color-secondary-background);
+  border-left: 5px solid var(--color-primary);
+  padding: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: var(--color-text);
+}
+
+.testimonios blockquote footer {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: var(--color-primary);
+  background: var(--color-secondary-background);
+}

@@ -1,0 +1,55 @@
+/* Contenedor de las tarjetas */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Estilo de cada tarjeta */
+  .card {
+    background: var(--color-secondary-background);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px var(--color-shadow);
+    width: 270px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Efecto al pasar el cursor sobre la tarjeta */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px var(--color-shadow);
+  }
+  
+  /* Imagen dentro de la tarjeta */
+  .card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* Título de la tarjeta */
+  .card h3 {
+    margin: 15px 20px 10px;
+    font-size: 22px;
+    color: var(--color-text);
+  }
+  
+  /* Texto de la tarjeta */
+  .card p {
+    font-size: 16px;
+    color: var(--color-text);
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+  
+  /* Estilos comunes para h3 y p */
+  .card h3, .card p {
+    margin: 0 20px;
+  }
+  
