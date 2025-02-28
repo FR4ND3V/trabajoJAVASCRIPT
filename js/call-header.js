@@ -13,16 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
       highlightActiveLink();
     });
 
-  // Cargar el footer
-  fetch("../assets/footer.html") // Cambia esta ruta si es necesario
-    .then((response) => response.text())
-    .then((data) => {
-      const footerElement = document.getElementById("footer");
-      footerElement.innerHTML = data;
-
-      // Dispara un evento para notificar que el footer está cargado
-      document.dispatchEvent(new Event("footerLoaded"));
-    });
 });
 
 // Función para resaltar el enlace activo
